@@ -24,11 +24,11 @@ public class Healthbar : MonoBehaviour
     
     public void DimHealth()
     {
-         ChangeHealth(-1);
+         ChangeHealth(-0.1f);
     }
 
     public void SumHealth()
     {
-         ChangeHealth(20);
+         ChangeHealth(5);
     }
 }
