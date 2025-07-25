@@ -9,25 +9,26 @@ public class Healthbar : MonoBehaviour
 {
     private Image image;
 
-    public float health = 10;
+    private float health = 100;
     
     private void Start()
     {
         image = GetComponent<Image>();
     }
 
-   
-
-
-    public void DimHealth()
-    {
-         ChangeHealth(1);
-    }
-    
     public void ChangeHealth(float changeAmount)
     {
         health += changeAmount;
-        image.fillAmount = health / 10;
+        image.fillAmount = health / 100;
     }
     
+    public void DimHealth()
+    {
+         ChangeHealth(-1);
+    }
+
+    public void SumHealth()
+    {
+         ChangeHealth(20);
+    }
 }

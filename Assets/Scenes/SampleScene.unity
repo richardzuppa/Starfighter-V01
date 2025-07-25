@@ -6800,7 +6800,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.036
+  m_FillAmount: 0.548
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -6825,7 +6825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3474ef951b69b3745825258042aea51f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
 --- !u!1 &1347649089
 GameObject:
   m_ObjectHideFlags: 0
@@ -17286,9 +17285,9 @@ MonoBehaviour:
   hazardCount3: 2
   spawnWait3: 3
   startWait3: 3
-  hazardCount4: 1
-  spawnWait4: 10
-  startWait4: 30
+  hazardCount4: 5
+  spawnWait4: 1
+  startWait4: 1
   scoreText: {fileID: 90023002}
 --- !u!82 &2007674278
 AudioSource:

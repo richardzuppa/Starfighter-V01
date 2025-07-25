@@ -34,6 +34,7 @@ public class destroyPlayer : MonoBehaviour
         {
             shield.SetActive(true);
             shieldActive = true;
+            healthbar.DimHealth();
         }
         else shield.SetActive(false);
 
@@ -46,7 +47,7 @@ public class destroyPlayer : MonoBehaviour
         {
             source.PlayOneShot(healthSound);
             Destroy(other.gameObject);
-            healthbar.DimHealth();
+            healthbar.SumHealth();
             
         }
 
