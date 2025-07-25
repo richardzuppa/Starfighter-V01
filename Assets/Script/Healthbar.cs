@@ -9,7 +9,7 @@ public class Healthbar : MonoBehaviour
 {
     private Image image;
 
-    public float health = 100;
+    public float health = 10;
     
     private void Start()
     {
@@ -17,22 +17,17 @@ public class Healthbar : MonoBehaviour
     }
 
    
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-           {
-            ChangeHealth(-10);
-           } 
-        else if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            ChangeHealth(10);
-        }
-    }
 
+
+    public void DimHealth()
+    {
+         ChangeHealth(1);
+    }
+    
     public void ChangeHealth(float changeAmount)
     {
         health += changeAmount;
-        image.fillAmount = health / 100;
+        image.fillAmount = health / 10;
     }
     
 }

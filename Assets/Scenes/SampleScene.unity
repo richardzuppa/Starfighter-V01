@@ -6751,7 +6751,7 @@ GameObject:
   - component: {fileID: 1223573133}
   m_Layer: 5
   m_Name: Health
-  m_TagString: Untagged
+  m_TagString: healthbg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6800,7 +6800,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.56
+  m_FillAmount: 0.036
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -12108,7 +12108,7 @@ GameObject:
   - component: {fileID: 1605818947}
   m_Layer: 5
   m_Name: Healthbg
-  m_TagString: Untagged
+  m_TagString: healthbg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

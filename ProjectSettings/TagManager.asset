@@ -11,6 +11,7 @@ TagManager:
   - bolt1
   - shield
   - powerup
+  - healthbg
   layers:
   - Default
   - TransparentFX

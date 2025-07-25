@@ -12,8 +12,16 @@ public class destroyPlayer : MonoBehaviour
     public AudioSource source;
     public AudioClip healthSound;
 
+    private Healthbar healthbar;
+
     private void Start()
     {
+        GameObject healthbarObject = GameObject.FindWithTag ("healthbg");
+        if (healthbarObject != null)
+        {
+            healthbar = healthbarObject.GetComponent <Healthbar>();
+        }
+
         shield.SetActive(false);
     }
 
@@ -38,6 +46,7 @@ public class destroyPlayer : MonoBehaviour
         {
             source.PlayOneShot(healthSound);
             Destroy(other.gameObject);
+            healthbar.DimHealth();
             
         }
 

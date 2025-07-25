@@ -7,13 +7,20 @@ public class DestroyByContact : MonoBehaviour
     public GameObject explosion;
     public GameObject playerExplosion;
 
-     
-    
     public int scoreValue;
     private GameControler gameController;
 
+    private Healthbar healthbar;
+
     void Start ()
     {
+        GameObject healthbarObject = GameObject.FindWithTag ("healthbg");
+        if (healthbarObject != null)
+        {
+            healthbar = healthbarObject.GetComponent <Healthbar>();
+        }
+        
+        
         GameObject gameControllerObject = GameObject.FindWithTag ("GameController");
         if (gameControllerObject != null)
         {
