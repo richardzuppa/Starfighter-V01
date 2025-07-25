@@ -14,7 +14,7 @@ public class RotateRigidbody : MonoBehaviour
 
     public float xMin, xMax, zMin, zMax;
 
-     
+    private Healthbar energybar;
 
 
     // MOVE
@@ -26,7 +26,14 @@ public class RotateRigidbody : MonoBehaviour
 
     void Start()
     {
-         
+        /* Referencia do script da barra de energia//
+        GameObject energybarObject = GameObject.FindWithTag ("energybar");
+        if (energybarObject != null)
+        {
+            energybar = energybarObject.GetComponent <Healthbar>();
+        }*/
+
+
         shield.SetActive(false);
         
         //Fetch the Rigidbody from the GameObject with this script attached
@@ -60,7 +67,7 @@ public class RotateRigidbody : MonoBehaviour
         if (Input.GetKey("up"))
         {
             engine.SetActive(true);
-             
+            //energybar.DimHealth(); 
 
         }
         else engine.SetActive(false);

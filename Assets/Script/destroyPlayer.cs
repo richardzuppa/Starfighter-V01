@@ -16,7 +16,7 @@ public class destroyPlayer : MonoBehaviour
 
     private void Start()
     {
-        GameObject healthbarObject = GameObject.FindWithTag ("healthbg");
+        GameObject healthbarObject = GameObject.FindWithTag ("shieldbar");
         if (healthbarObject != null)
         {
             healthbar = healthbarObject.GetComponent <Healthbar>();

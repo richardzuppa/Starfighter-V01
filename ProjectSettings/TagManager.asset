@@ -12,6 +12,8 @@ TagManager:
   - shield
   - powerup
   - healthbg
+  - shieldbar
+  - energybar
   layers:
   - Default
   - TransparentFX
